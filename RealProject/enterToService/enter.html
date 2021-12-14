@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Avto-service.uz</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.scss">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://fonts.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Amenu%3A">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        ScrollReveal({
+            duration: 1000
+        })
+    </script>
+</head>
+
+<body>
+    <!-- preloader name:Asp.uz -->
+    <div class="loader_bg">
+        <div class="loader">
+            <p>Avto-servis.uz</p>
+
+        </div>
+    </div>
+
+    <!-- top of the site -->
+    <div class="header">
+        <!-- logo of project -->
+        <div class="logotip">
+            <img src="./img/photo_2021-11-30_14-50-24.jpg" alt="">
+
+            <!-- <span>Avtoservis.uz</span> -->
+        </div>
+        <!-- menu -->
+        <div class="navbar_menu">
+            <ul>
+                <li><a href="../Kirish qismi/index.html" class="active">Bosh sahifa</a></li>
+                <li><a href="#aboutUs">Biz haqimizda</a></li>
+                <li class="dropdown" onclick="MenuToggle()">
+                    <a href="#" class="dropbtn">Servislar</a>
+                    <div class="dropdown-content">
+                        <a href="../servislar/service.html">
+                            <span>Dvigatel</span>
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                        <a href="../servislar/service.html">
+                            <span>Kuzov Remonti</span>
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                        <a href="../servislar/service.html">
+                            <span>Polirovka</span>
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                        <a href="../servislar/service.html">
+                            <span>Transmissiya</span>
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                        <a href="../servislar/service.html">
+                            <span>Yurish qismi</span>
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                        <a href="../servislar/service.html"><span>Tuning</span>
+                            <i class="material-icons">chevron_right</i></a>
+                        <a href="../servislar/service.html">
+                            <span>Diagnostika</span>
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </div>
+
+                </li>
+                <li><a href="#mobileService">Ko'chma servislar</a></li>
+                <li><a href="#contact">Murojaat uchun</a></li>
+
+            </ul>
+
+            <a class="logIn" href="../login/login.html">
+                <p>
+                    Log in
+                </p>
+                <span>
+                    <img src="../img/outline_login_white_24dp.png" alt="">
+                </span>
+            </a>
+        </div>
+
+        <!-- menu toggle for phone version -->
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <div id="home" class="home">
+        <!-- <img src="./img/istockphoto-1284285171-170667a.jpg" alt=""> -->
+
+        <div class="context">
+            <p class="title">O'zingiz uchun eng qulay <br> avtomobil servisini toping!</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Ipsum has been the industry's standard dummy <br> text ever since the 1500s, when an unknown printer took <br> a galley of type and scrambled it to make a type
+                <br> specimen book.</p>
+
+            <a href="#">
+                Boshlang
+            </a>
+        </div>
+    </div>
+
+
+    <!-- content => about us -->
+    <p class="title" style="text-align:center"> Biz haqimizda</p>
+    <div class="aboutUs" id="aboutUs">
+        <div class="firstPart">
+            <p>Sizda avtomobil bor. Avtomobilingizni doim texnik shay-holatda saqlashingiz kerak. Buning uchun sizga avtomobillarga texnik xizmat ko’rsatish shaxobchasi kerak. Shu onda sizga ‘Qaysi servisga borsam ekan’degan fikr keladi. Sizga do’stlaringizshahardagi
+                biror-bir servisni taklif etadi. Siz o’sha servisga borasiz, u servis yaxshi bo’lgani uchun o’z o’zidan u yerda mijozlar ko’p bo’ladi. Siz u yerda soatlab kutasiz,qolaversa asabingiz buziladi. Navbatingiz keldi. Sizga xizmat ko’rsatishdi.
+                Xizmatdan ko’nglingiz to’lmadi. Boshqa avtoservisga bordingiz u yerda ham shu holat. Siz avto servislarga qatnab vaqtingiz, asabingiz,pulingizni yo’qotdingiz.
+            </p>
+
+            <img src="./img/img1.jpg" alt="">
+
+        </div>
+
+        <div class="secondPart">
+
+            <img src="./img/img2.jpg" alt="">
+
+            <p>Sizda avtomobil bor. Avtomobilingizni doim texnik shay-holatda saqlashingiz kerak. Buning uchun sizga avtomobillarga texnik xizmat ko’rsatish shaxobchasi kerak. Shu onda sizga ‘Qaysi servisga borsam ekan’degan fikr keladi. Sizga do’stlaringiz
+                shahardagi biror-bir servisni taklif etadi. Siz o’sha servisga borasiz, u servis yaxshi bo’lgani uchun o’z o’zidan u yerda mijozlar ko’p bo’ladi. Siz u yerda soatlab kutasiz,qolaversa asabingiz buziladi. Navbatingiz keldi. Sizga xizmat
+                ko’rsatishdi. Xizmatdan ko’nglingiz to’lmadi. Boshqa avtoservisga bordingiz u yerda ham shu holat. Siz avto servislarga qatnab vaqtingiz, asabingiz,pulingizni yo’qotdingiz.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- the service part of the site -->
+    <div id="service" class="service">
+        <p class="title" style="text-align:center"> Bizning Servislar</p>
+
+
+        <div class="services">
+            <div class="cards">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../img/logo1.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <p class="nameService">
+                            Motoritet
+                        </p>
+
+                        <div class="progressBar">
+                            <div class="skill-rate">
+                                <p>Narx Hamyonbopligi</p>
+                                <div class="container">
+                                    <div class="skillBar rate">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-quality">
+                                <p>Xizmat sifati</p>
+                                <div class="container">
+                                    <div class="skillBar quality">82%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-fast">
+                                <p>Xizmat tezkorligi</p>
+                                <div class="container">
+                                    <div class="skillBar faster">90%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="../Ma'lumotnoma/index.html">
+                            <p>
+                                Batafsil
+                            </p>
+                            <img src="../img/outline_navigate_next_black_24dp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../img/logo2.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <p class="nameService">
+                            Car<span style="color: #FF2414;">Go</span>
+                        </p>
+
+                        <div class="progressBar">
+                            <div class="skill-rate">
+                                <p>Narx Hamyonbopligi</p>
+                                <div class="container">
+                                    <div class="skillBar rate">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-quality">
+                                <p>Xizmat sifati</p>
+                                <div class="container">
+                                    <div class="skillBar quality">82%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-fast">
+                                <p>Xizmat tezkorligi</p>
+                                <div class="container">
+                                    <div class="skillBar faster">90%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="../Ma'lumotnoma/index.html">
+                            <p>
+                                Batafsil
+                            </p>
+                            <img src="../img/outline_navigate_next_black_24dp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../img/logo3.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <p class="nameService">
+                            Ahmad<span style="color: #808080">Garage</span>
+                        </p>
+
+                        <div class="progressBar">
+                            <div class="skill-rate">
+                                <p>Narx Hamyonbopligi</p>
+                                <div class="container">
+                                    <div class="skillBar rate">90%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-quality">
+                                <p>Xizmat sifati</p>
+                                <div class="container">
+                                    <div class="skillBar quality">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-fast">
+                                <p>Xizmat tezkorligi</p>
+                                <div class="container">
+                                    <div class="skillBar faster">96%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="../Ma'lumotnoma/index.html">
+                            <p>
+                                Batafsil
+                            </p>
+                            <img src="../img/outline_navigate_next_black_24dp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards" style="margin-top: 150px;">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="./img/logo4.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <p class="nameService">
+                            Ahmad<span style="color: #808080">Garage</span>
+                        </p>
+
+                        <div class="progressBar">
+                            <div class="skill-rate">
+                                <p>Narx Hamyonbopligi</p>
+                                <div class="container">
+                                    <div class="skillBar rate">90%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-quality">
+                                <p>Xizmat sifati</p>
+                                <div class="container">
+                                    <div class="skillBar quality">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-fast">
+                                <p>Xizmat tezkorligi</p>
+                                <div class="container">
+                                    <div class="skillBar faster">96%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="../Ma'lumotnoma/index.html">
+                            <p>
+                                Batafsil
+                            </p>
+                            <img src="../img/outline_navigate_next_black_24dp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="./img/logo5.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <p class="nameService" style="text-transform: uppercase">
+                            Fix<span style="color: #808080">Store</span>
+                        </p>
+
+                        <div class="progressBar">
+                            <div class="skill-rate">
+                                <p>Narx Hamyonbopligi</p>
+                                <div class="container">
+                                    <div class="skillBar rate">90%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-quality">
+                                <p>Xizmat sifati</p>
+                                <div class="container">
+                                    <div class="skillBar quality">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-fast">
+                                <p>Xizmat tezkorligi</p>
+                                <div class="container">
+                                    <div class="skillBar faster">96%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="../Ma'lumotnoma/index.html">
+                            <p>
+                                Batafsil
+                            </p>
+                            <img src="../img/outline_navigate_next_black_24dp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="./img/logo6.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <p class="nameService">
+                            Fast<span style="color: #808080">Repair</span>
+                        </p>
+
+                        <div class="progressBar">
+                            <div class="skill-rate">
+                                <p>Narx Hamyonbopligi</p>
+                                <div class="container">
+                                    <div class="skillBar rate">90%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-quality">
+                                <p>Xizmat sifati</p>
+                                <div class="container">
+                                    <div class="skillBar quality">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-fast">
+                                <p>Xizmat tezkorligi</p>
+                                <div class="container">
+                                    <div class="skillBar faster">96%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="../Ma'lumotnoma/index.html">
+                            <p>
+                                Batafsil
+                            </p>
+                            <img src="../img/outline_navigate_next_black_24dp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile service -->
+
+    <div class="mobile_service" id="mobileService">
+        <p class="title" style="text-align:center"> Ko'chma servislar</p>
+        <div class="mobile_service__content">
+            <img src="./img/mobile_service.png" alt="">
+
+            <p>Ko'chma servis tushunchasi aslida juda oddiy. Ko'chma servis - bu o'z asboblari va jihozlarini sizga to'g'ri keltira oladigan avtoulovlarni ta'mirlash bo'yicha mutaxassis. Ha, ular xuddi shunday ovoz berishadi! Ular xuddi an'anaviy avtoulovlarni
+                ta'mirlash mexanikasiga o'xshaydi va bir xil ko'nikmalar va sertifikatlarga ega, lekin ular odatda bo'lajak mijozlarning avtoulovlarni ta'mirlash tajribasiga ko'proq ahamiyat berishadi. O'z xizmatlarini iloji boricha qulay va qulay qilish
+                uchun ular do'konni sizga to'g'ri olib kelishadi! Agar hudud xavfsiz va nisbatan tekis bo'lsa, mobil mexanik deyarli har qanday joyga kelishi mumkin.Mobil mexanik tushunchasi aslida juda oddiy. Mobil mexanik - bu o'z asboblari va jihozlarini
+                sizga to'g'ri keltira oladigan avtoulovlarni ta'mirlash bo'yicha mutaxassis. Ha, ular xuddi shunday ovoz berishadi! Ular xuddi an'anaviy avtoulovlarni ta'mirlash mexanikasiga o'xshaydi va bir xil ko'nikmalar va sertifikatlarga ega, lekin
+                ular odatda bo'lajak mijozlarning avtoulovlarni ta'mirlash tajribasiga ko'proq ahamiyat berishadi. O'z xizmatlarini iloji boricha qulay va qulay qilish uchun ular do'konni sizga to'g'ri olib kelishadi! Agar hudud xavfsiz va nisbatan tekis
+                bo'lsa, mobil mexanik deyarli har qanday joyga kelishi mumkin.</p>
+        </div>
+
+        <div class="mobile_service__button">
+            <a href="">
+                <p>Buyurtma qilish</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- the contact part -->
+    <div class="contact" id="contact">
+        <p class="title" style="text-align:center"> Murojaat uchun</p>
+        <div class="contact-us">
+            <div class="map">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.452933979841!2d69.27985901492342!3d41.27724591077967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aac316ee659%3A0xc5be678c10cbba9b!2sTDTU!5e0!3m2!1sru!2s!4v1635330979464!5m2!1sru!2s"
+                        width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            </div>
+
+            <div class="contact_info">
+                <form>
+                    <label for="fname">Ism-sharif</label> <br>
+                    <input type="text" name="fname" id="name" placeholder="FIO" required> <br>
+
+                    <label for="femail">Email-pochta</label> <br>
+                    <input type="email" name="femail" id="email" placeholder="Email" required> <br>
+
+                    <label for="fphone">Telefon raqam</label> <br>
+                    <input type="tel" name="fphone" id="phone" placeholder="Tel-raqam" required> <br>
+
+                    <label for="fmessage">Xabar yuborish</label> <br>
+                    <textarea name="message" id="" cols="58" rows="7" placeholder="Xabar yuborish"></textarea> <br>
+
+                    <input type="submit" name="submit" value="Yuborish">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll reveal -->
+    <script>
+        ScrollReveal().reveal('.contact');
+        ScrollReveal().reveal('.service');
+        ScrollReveal().reveal('.card');
+        ScrollReveal().reveal('.map');
+        ScrollReveal().reveal('.contact-info');
+        ScrollReveal().reveal('.aboutUs');
+        ScrollReveal().reveal('.mobile_service');
+
+        sr.reveal('head')
+
+
+        const sr = ScrollReveal({
+
+            origin: top,
+            distance: '30px',
+            duration: 3000,
+            reset: true
+        })
+    </script>
+
+    <!-- menu toggle for service part -->
+    <script>
+        function MenuToggle() {
+            const toggleMenu = document.querySelector(".dropdown-content");
+            toggleMenu.classList.toggle("active");
+        }
+    </script>
+
+    <!-- activation for preloader -->
+    <script>
+        setTimeout(function() {
+            $(".loader_bg").fadeToggle();
+        }, 1000)
+    </script>
+
+    <!-- the menu toggle  -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const navbarMenu = document.querySelector('.navbar_menu');
+        burger.addEventListener('click', () => {
+            navbarMenu.classList.toggle('nav-active')
+        })
+    </script>
+</body>

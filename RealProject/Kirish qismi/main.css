@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0e1538;
+}
+
+.entrance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container:nth-child(1) {
+  background: #000C21;
+}
+
+.container:nth-child(1):after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: url(https://cube.getpitstop.com/assets/img/home-categories/Fitment.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.container:nth-child(2):after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 70px;
+  background: url(https://cube.getpitstop.com/assets/img/home-categories/Mechanical.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #0e1538;
+  gap: 10em;
+  z-index: 1;
+}
+
+.container a {
+  position: relative;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 28px 60px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.container a span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 1.8em;
+  letter-spacing: 4px;
+  z-index: 1;
+}
+
+.container a:hover {
+  background: var(--clr);
+  -webkit-box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr), 0 0 100px var(--clr);
+          box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr), 0 0 100px var(--clr);
+}
+
+.container a::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  left: 178px;
+  width: 40px;
+  height: 400px;
+  background: var(--clr);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+}
+
+.container a:hover::before {
+  width: 120%;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.container a::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: #0e1538;
+}
+
+.container a:hover::after {
+  background: var(--clr);
+}
+
+@media screen and (max-width: 680px) {
+  .entrance {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .entrance .container {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .entrance .container a {
+    padding: 14px 30px;
+  }
+  .entrance .container a span {
+    font-size: .9em;
+    letter-spacing: 2px;
+  }
+  .entrance .container::after {
+    width: 100px;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
